@@ -13,9 +13,7 @@ program
 program
     .command('create [dir]')
     .description('创建一个空文件')
-    .action(function (dir) {
-        console.log('create %s', dir)
-    })
+    .action(require('../lib/cmd_create'))
 // preview 命令
 program
     .command('preview [dir]')
